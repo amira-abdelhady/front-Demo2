@@ -10,7 +10,7 @@ import UserDetails from "./pages/UserDetails";
 import { LanguageContext } from "./context/languageContext";
 
 const App = () => {
-  const [contextLang, setContextLang] = useState("en");
+  // const [contextLang, setContextLang] = useState("en");
   return (
     <div
       className={contextLang === "ar" ? "text-right" : "text-left"}
