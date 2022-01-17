@@ -17,7 +17,7 @@ const App = () => {
       dir={contextLang === "ar" ? "rtl" : "ltr"}
     >
       <LanguageContext.Provider value={{ contextLang, setContextLang }}>
-        <Router>
+       /* <Router>
           <Navbar />
           <Switch>
             <Route path={"/"} exact component={UserListFunctional} />
@@ -26,7 +26,7 @@ const App = () => {
             <Route path={"/user/list"} exact component={UserForm} />
           </Switch>
           <Footer />
-        </Router>
+        </Router>*/
       </LanguageContext.Provider>
     </div>
   );
