@@ -7,6 +7,7 @@ import UserForm from "./pages/UserForm";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import UserListAPI from "./pages/UserList";
 import UserDetails from "./pages/UserDetails";
+import Products from "./pages/UserListFunctional";
 import { LanguageContext } from "./context/languageContext";
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
             <Route path={"/user"} exact component={UserListAPI} />
             <Route path={"/user/:id"} exact component={UserDetails} />
             <Route path={"/user/list"} exact component={UserForm} />
+            <Route path={"/user/products"} exact component={Products} />
           </Switch>
           <Footer />
         </Router>
